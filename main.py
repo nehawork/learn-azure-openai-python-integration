@@ -4,7 +4,7 @@ from prompts.basic_prompts import list_models, basic_chat
 from prompts.classify_text import classify_text
 from prompts.content_prompts import generate_content, summarize_content
 from prompts.custom_requests import customized_prompt
-from analysis.response_analyzer import analyze_response
+from prompts.response_analyzer_example_spacy import analyze_response_example_spacy
 from prompts.translate_text import translate_text
 
 if __name__ == "__main__":
@@ -17,7 +17,7 @@ if __name__ == "__main__":
     customized_prompt("Choose a good name for elephant")
 
     print("\n=== Analyze Story ===\n")
-    analyze_response("Write a short story about trip to bali")
+    analyze_response_example_spacy("Write a short story about trip to bali")
 
     print("\n=== Chatbot ===\n")
     init_chatbot()

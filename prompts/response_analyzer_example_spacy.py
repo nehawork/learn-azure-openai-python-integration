@@ -12,7 +12,7 @@ To analyze the answer, there are libraries available in python
 spaCy, TextBlob, NLTK
 '''
 
-def analyze_response(prompt):
+def analyze_response_example_spacy(prompt):
     response = client.chat.completions.create(
         messages=[
             {"role": "system", "content": "You are a helpful assistant."},
