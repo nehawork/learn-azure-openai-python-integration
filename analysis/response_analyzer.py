@@ -3,6 +3,15 @@ from config.settings import client, model_name
 
 model_spacy = spacy.load("en_core_web_md")
 
+# Process & Analyze ChatGPT Response
+'''
+Step 1: Analyze the answer
+Step 2: Use the extracted information
+
+To analyze the answer, there are libraries available in python
+spaCy, TextBlob, NLTK
+'''
+
 def analyze_response(prompt):
     response = client.chat.completions.create(
         messages=[

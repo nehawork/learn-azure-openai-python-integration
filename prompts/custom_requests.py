@@ -1,5 +1,12 @@
 from config.settings import client, model_name
 
+# ChatGPT Request Customization
+'''
+Step 1: Temperature
+Step 2: Max Tokens
+Step 3: No of Responses
+'''
+
 def customized_prompt(prompt):
     response = client.chat.completions.create(
         messages=[

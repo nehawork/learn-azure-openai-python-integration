@@ -5,6 +5,13 @@ def list_models():
     for model in models:
         print(model.id)
 
+# interact with ChatGPT from Python
+'''
+Step 1: Prepare the request
+Step 2: Send the request
+Step 3: Process and display the response
+'''
+
 def basic_chat(prompt):
     response = client.chat.completions.create(
         messages=[
