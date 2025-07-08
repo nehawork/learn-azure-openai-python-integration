@@ -16,6 +16,14 @@ def init_chatbot():
     prev_answers = []
     history = ''
 
+    # Filter Answers - Forbidden Words
+    '''
+    Step 1 - Setting Variables
+    Step 2 - Filtering Forbidden Words
+    Step 3 - Intercepting the response
+    '''
+    forbidden_words = ['the', 'and', 'for', 'you', 'are', 'not']
+
     while True:
         user_input = input("\nYou:")
         if user_input == "exit":
@@ -33,7 +41,7 @@ def init_chatbot():
 
         prompt = f"The user asks: {user_input} \n"
         history += prompt
-        chatbot_answer = ask_chatbot(history)
+        chatbot_answer = ask_chatbot(history, forbidden_words)
         print(f"{chatbot_answer}")
         prev_questions.append(user_input)
         prev_answers.append(chatbot_answer)
