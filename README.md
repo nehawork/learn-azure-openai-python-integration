@@ -6,9 +6,8 @@ I explored practical tools like Google Colab and Jupyter Notebook, and began bui
 
 ## 🧰 Tools I Explored:
 
-Google Colab – Great for quick experimentation with Python and zero setup
-
-Jupyter Notebook – Perfect for step-by-step code + explanation + output
+- **Google Colab** – Great for quick experimentation with Python and zero setup
+- **Jupyter Notebook** – Perfect for step-by-step code + explanation + output
 
 ## 🤖 What I Built with Azure OpenAI + Python:
 
